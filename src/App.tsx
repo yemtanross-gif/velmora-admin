@@ -7,6 +7,8 @@ import { Transactions } from './pages/Transactions'
 import { Audit } from './pages/Audit'
 import { Settings } from './pages/Settings'
 import { RedeemCards } from './pages/RedeemCards'
+import { Balances } from './pages/Balances'
+import { Invites } from './pages/Invites'
 import { Layout } from './components/Layout'
 import { useAuthStore } from './store/auth'
 
@@ -43,6 +45,8 @@ export default function App() {
           <Route path="/audit" element={<Audit />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/redeem-cards" element={<RedeemCards />} />
+          <Route path="/balances" element={<Balances />} />
+          <Route path="/invites" element={<Invites />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

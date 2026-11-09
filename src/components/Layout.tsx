@@ -1,5 +1,7 @@
 import { NavLink, Outlet, useNavigate } from 'react-router-dom'
-import { LayoutDashboard, Users, ArrowLeftRight, ScrollText, Settings, Ticket, LogOut, Shield } from 'lucide-react'
+import { LayoutDashboard, Users, ArrowLeftRight, ScrollText, Settings, Ticket,
+  Wallet,
+  UserPlus, LogOut, Shield } from 'lucide-react'
 import { useAuthStore } from '../store/auth'
 import clsx from 'clsx'
 
@@ -8,6 +10,8 @@ const nav = [
   { to: '/users', icon: Users, label: 'Users' },
   { to: '/transactions', icon: ArrowLeftRight, label: 'Transactions' },
   { to: '/audit', icon: ScrollText, label: 'Audit Log' },
+  { to: '/balances', icon: Wallet, label: 'Balances' },
+  { to: '/invites', icon: UserPlus, label: 'Invites' },
   { to: '/redeem-cards', icon: Ticket, label: 'Redeem cards' },
   { to: '/settings', icon: Settings, label: 'Settings' },
 ]
